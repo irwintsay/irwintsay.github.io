@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+
+html {
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  font-family: 'Raleway';
+  font-size: 16px;
+  margin: 0;
+  color: white;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 2rem;
+}
+
+header h1 {
+  font-family: 'Roboto';
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+header h2 {
+  margin-bottom: 100px;
+  font-family: 'Roboto';
+}
+
+.title {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header li {
+  display: inline;
+  margin: 0 6rem;
+  font-size: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+}
+
+#about-me {
+  height: 33vh;
+  width: 66%;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.ng-hide-add {
+  transition: all 1s ease;
+}
+
+.ng-hide-remove {
+  transition: all 1s ease;
+}
+
+.project-images {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.project-images a {
+  color: white;
+}
+
+nav ul li a {
+  color white;
+  transition: 1s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(235, 30, 138);
+}
+
+.active {
+  color: rgb(251, 78, 169);
+}
+
+#contact h3 {
+  display: inline;
+  margin: 0 2rem;
+}
+
+#contact {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  line-height: 50px;
+}
