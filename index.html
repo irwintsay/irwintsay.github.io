@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Irwin Tsay</title>
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -13,11 +12,11 @@
   </head>
   <body ng-controller="PortfolioController">
     <header>
-      <!-- <h1>Irwin Tsay</h1> -->
-      <h1><span class="title">I</span><span class="title">R</span><span class="title">W</span><span class="title">I</span><span class="title">N</span>
-        <span class="title"></span><span class="title">T</span><span class="title">S</span><span class="title">A</span><span class="title">Y</span></h1>
+      <!-- <h1><span class="title">I</span><span class="title">R</span><span class="title">W</span><span class="title">I</span><span class="title">N</span>
+        <span class="title"></span><span class="title">T</span><span class="title">S</span><span class="title">A</span><span class="title">Y</span></h1> -->
+      <span class="name">IRWIN<span class="heavy">TSAY</span></span>
 
-      <h3><span id="subtitle-1" class="title">Full-Stack Web Developer.</span><span id="subtitle-2" class="title">Avid Gamer.</span><span id="subtitle-3" class="title">Extraordinary Human Being.</span></h3>
+      <h3><span id="subtitle-1" class="title">Full-Stack Web Developer.</span><span id="subtitle-2" class="title">Avid Gamer.</span><span id="subtitle-3" class="title">Problem Solver.</span><span id="subtitle-4" class="title">Backup Dancer.</span><span id="subtitle-5" class="title">One of these things isn't true.</span></h3>
       <nav>
         <ul>
           <li><a class="nav active" href="#" ng-click="showAboutMe()">About</a></li>
@@ -29,9 +28,10 @@
 
     <div id="about-me" ng-show="dispAboutMe">
       <p>
-        Hi! My name is Irwin. Welcome to my web development portfolio. As you can see, I'm pretty damn good at this.
-        Look at this site. It's first class. Anyways, check out my projects if you've got time and drop me a line if
-        you're feeling saucy. Cheers!
+        Hi! My name is Irwin. This is my web development portfolio. I'm a big
+        of <span class="heavy">creating single page web applications</span> with Node and Angular. I also
+        love the challenge of solving tricky logic problems. Check out my projects
+        if you're interested in seeing some of my work. Cheers!
       </p>
     </div>
 
