@@ -2,63 +2,77 @@
 <html ng-app="Port-App">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Irwin Tsay</title>
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body ng-controller="PortfolioController">
     <header>
-      <!-- <h1><span class="title">I</span><span class="title">R</span><span class="title">W</span><span class="title">I</span><span class="title">N</span>
-        <span class="title"></span><span class="title">T</span><span class="title">S</span><span class="title">A</span><span class="title">Y</span></h1> -->
       <span class="name">IRWIN<span class="heavy">TSAY</span></span>
-
-      <h3><span id="subtitle-1" class="title">Full-Stack Web Developer.</span><span id="subtitle-2" class="title">Avid Gamer.</span><span id="subtitle-3" class="title">Problem Solver.</span><span id="subtitle-4" class="title">Backup Dancer.</span><span id="subtitle-5" class="title">One of these things isn't true.</span></h3>
+      <span class="title">Full-Stack Developer.</span>
+      <span class="title">Aspiring Cook.</span>
+      <span class="title">Avid Gamer.</span>
+    </header>
+    <div id="wrapper">
       <nav>
         <ul>
           <li><a class="nav active" href="#" ng-click="showAboutMe()">About</a></li>
           <li><a class="nav" href="#" ng-click="showProjects()">Projects</a></li>
+          <li><a class="nav project" href="#" ng-click="showProjects()">TetrisJS</a></li>
+          <li><a class="nav project" href="#" ng-click="showProjects()">Order.ly</a></li>
+          <li><a class="nav project" href="#" ng-click="showProjects()">Mobcats</a></li>
+          <li><a class="nav project" href="#" ng-click="showProjects()">VGDB</a></li>
           <li><a class="nav" href="#" ng-click="showContact()">Contact</a></li>
         </ul>
       </nav>
-    </header>
-
-    <div id="about-me" ng-show="dispAboutMe">
-      <p>
-        Hi! My name is Irwin. This is my web development portfolio. I'm a big
-        of <span class="heavy">creating single page web applications</span> with Node and Angular. I also
-        love the challenge of solving tricky logic problems. Check out my projects
-        if you're interested in seeing some of my work. Cheers!
-      </p>
-    </div>
-
-    <div id="projects" ng-show="dispProjects">
-      <div class="project-images">
-        <h3>TetrisJS</h3>
-        <a href="http://irwintsay.github.io/TetrisJS/tetris.html"><img src="images/tetrisjs.gif" alt="TetrisJS GIF" /></a>
+      <div id="about-me" ng-show="dispAboutMe">
+        <img src="images/profile-pic.png" alt="" />
         <p>
-          HTML5 | CSS | JavaScript
+          Hi, my name is Irwin. This is my web development portfolio. I'm a big fan
+          of creating single page web applications with Node and Angular. I also
+          love the challenge of solving logic problems. Check out my projects
+          if you're interested in seeing my work. Cheers!
         </p>
-        <a href="#">GitHub</a>
       </div>
-      <div class="project-images">
-        <h3>Order.ly</h3>
-        <a href="https://pacific-cliffs-67172.herokuapp.com/users/profile"><img src="images/orderly.gif" alt="Order.ly GIF" /></a>
-        <p>
-          Materialize | Ruby on Rails | PostgreSQL
-        </p>
-        <a href="#">GitHub</a>
+
+      <div id="projects" ng-show="dispProjects">
+        <div class="project-images">
+          <h3>TetrisJS</h3>
+          <a href="http://irwintsay.github.io/TetrisJS/tetris.html"><img src="images/tetrisjs.gif" alt="TetrisJS GIF" /></a>
+          <p>
+            HTML5 | CSS | JavaScript
+          </p>
+          <a href="#">GitHub</a>
+        </div>
+        <div class="project-images">
+          <h3>Order.ly</h3>
+          <a href="https://pacific-cliffs-67172.herokuapp.com/users/profile"><img src="images/orderly.gif" alt="Order.ly GIF" /></a>
+          <p>
+            Materialize | Ruby on Rails | PostgreSQL
+          </p>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+      <div id="contact" class="content-box" ng-show="dispContact">
+        <ul>
+          <li><a href="mailto:irwintsay@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/irwintsay">LinkedIn</a></li>
+          <li><a href="https://github.com/irwintsay">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div id="footer">
+        <h3>Email</h3>
+        <h3>LinkedIn</h3>
+        <h3>GitHub</h3>
+        <h3>Facebook</h3>
       </div>
     </div>
-
-    <div id="contact">
-      <h3>LinkedIn</h3>
-      <h3>GitHub</h3>
-      <h3>Facebook</h3>
-    </div>
-
   </body>
 </html>

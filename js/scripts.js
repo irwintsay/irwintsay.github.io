@@ -1,4 +1,3 @@
-console.log("Scripts breh!");
 
 function setlinkClickHandler() {
   $('.nav').click(function(e){
@@ -12,5 +11,6 @@ function setColor() {
 }
 
 $(function() {
+  console.log("Irwin Tsay's Portfolio");
   setlinkClickHandler();
 });
