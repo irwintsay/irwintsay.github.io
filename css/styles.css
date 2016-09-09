@@ -13,13 +13,13 @@ html {
   box-sizing: inherit;
 }
 
+/* HTML Element Defaults */
 body {
-  margin: auto;
-  padding: 1rem 3rem;
+  margin: 0;
+  padding: 1rem 1rem;
   width: 100%;
   min-width: 320px;
   max-width: 1080px;
-  height: 100%;
 
   font-family: 'Raleway';
   font-size: 16px;
@@ -29,29 +29,9 @@ body {
 }
 
 header {
-  height: 80px;
-  line-height: 80px;
-  margin-bottom: 2em;
-}
-
-.title {
-  display: inline;
-  margin: 0 .5em;
-  float: right;
-}
-
-span.name {
-  font-family: 'Roboto';
-  font-size: 4em;
-  font-weight: lighter;
-  color: white;
-  margin: 0;
-  padding-right: 2rem;
-}
-
-span.heavy {
-  font-weight: 700;
-  margin-left: .5rem;
+  height: 60px;
+  margin-bottom: .5em;
+  text-align: left;
 }
 
 nav {
@@ -60,7 +40,6 @@ nav {
   margin: 0;
   margin-top: 4rem;
 }
-
 
 ul {
   margin: 0;
@@ -73,82 +52,6 @@ nav li {
   margin-bottom: 4rem;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-#wrapper {
-  display: flex;
-}
-
-.content-box {
-  position: relative;
-  margin: 3rem 0 0 0;
-  padding: 0 3%;
-  width: 80%;
-}
-
-#about-me {
-  position: relative;
-  height: 33vh;
-  width: 80%;
-  margin: 0;
-  margin-top: 3rem;
-  padding: 0 3%;
-  text-align: justify;
-  font-size: 1.5rem;
-}
-
-#about-me img {
-  display: block;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-}
-
-#projects {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-}
-
-#contact {
-  text-align: center;
-}
-
-#contact a {
-  font-size: 1.5rem;
-}
-
-#contact li {
-  margin-bottom: 1rem;
-}
-
-.ng-hide-add {
-  transition: all 1s ease;
-}
-
-.ng-hide-remove {
-  transition: all 1s ease;
-}
-
-.project-images {
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-.project-images a {
-  color: white;
-}
-
-.project {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-}
-
 nav ul li a {
   color white;
   transition: 1s ease;
@@ -158,16 +61,12 @@ nav ul li a:hover {
   color: rgb(235, 30, 138);
 }
 
-.active {
-  color: rgb(251, 78, 169);
+a {
+  text-decoration: none;
+  color: white;
 }
 
-#footer h3 {
-  display: inline;
-  margin: 0 2rem;
-}
-
-#footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -175,6 +74,58 @@ nav ul li a:hover {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: black;
   line-height: 50px;
+  background-color: black;
+  z-index: 1;
+}
+
+.title {
+  display: inline;
+  font-size: 0.6em;
+  margin: 0 0.2em;
+}
+
+.name {
+  display: block;
+  font-family: 'Roboto';
+  font-size: 2em;
+  font-weight: lighter;
+  color: white;
+  margin: 0;
+}
+
+.banner {
+  position: relative;
+  width: 100vw;
+  left: -1rem;
+}
+
+.content {
+  margin: 2rem auto;
+  font-size: 0.8em;
+}
+
+.about-me {
+  text-align: justify;
+}
+
+.project {
+  width: 100%;
+  max-width: 640px;
+  margin: 3rem auto;
+}
+
+.project-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.active {
+  color: rgb(251, 78, 169);
+}
+
+/* Font */
+.heavy {
+  font-weight: 700;
 }

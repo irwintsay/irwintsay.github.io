@@ -13,13 +13,14 @@
   </head>
   <body ng-controller="PortfolioController">
     <header>
-      <span class="name">IRWIN<span class="heavy">TSAY</span></span>
-      <span class="title">Full-Stack Developer.</span>
+      <span class="name">IRWIN<span class="heavy"> TSAY</span></span>
       <span class="title">Aspiring Cook.</span>
       <span class="title">Avid Gamer.</span>
+      <span class="title">Full-Stack Developer.</span>
     </header>
-    <div id="wrapper">
-      <nav>
+    <img class="banner" src="images/banner.png" alt="" />
+    <div class="main">
+      <!-- <nav>
         <ul>
           <li><a class="nav active" href="#" ng-click="showAboutMe()">About</a></li>
           <li><a class="nav" href="#" ng-click="showProjects()">Projects</a></li>
@@ -29,50 +30,75 @@
           <li><a class="nav project" href="#" ng-click="showProjects()">VGDB</a></li>
           <li><a class="nav" href="#" ng-click="showContact()">Contact</a></li>
         </ul>
-      </nav>
-      <div id="about-me" ng-show="dispAboutMe">
-        <img src="images/profile-pic.png" alt="" />
+      </nav> -->
+      <div class="content about-me">
         <p>
-          Hi, my name is Irwin. This is my web development portfolio. I'm a big fan
-          of creating single page web applications with Node and Angular. I also
-          love the challenge of solving logic problems. Check out my projects
-          if you're interested in seeing my work. Cheers!
+          Hey! My name is Irwin.
+        </p>
+        <p>
+          If you landed here, you might be wondering what you're looking at.
+          This is my web development portfolio. As a full-stack web
+          developer, I am experienced with Node/Express, Ruby on Rails,
+          Postgresql, MongoDB, and a few front-end frameworks such as Angular
+          and React. I love creating dynamic, single page web applications. I
+          also enjoy solving logic heavy problems. If you're interested in
+          seeing more of my work, check out my projects or head over to my
+          GitHub. Thanks for stopping by!
+        </p>
+        <p>
+          Cheers!
         </p>
       </div>
 
-      <div id="projects" ng-show="dispProjects">
-        <div class="project-images">
-          <h3>TetrisJS</h3>
-          <a href="http://irwintsay.github.io/TetrisJS/tetris.html"><img src="images/tetrisjs.gif" alt="TetrisJS GIF" /></a>
+      <div class="content">
+        <div class="project">
+          <h3>// TetrisJS</h3>
+          <a title="Launch TetrisJS" href="http://irwintsay.github.io/TetrisJS/tetris.html">
+            <img class="project-image" src="images/tetrisjs.gif" alt="TetrisJS GIF" />
+          </a>
           <p>
             HTML5 | CSS | JavaScript
           </p>
-          <a href="#">GitHub</a>
+          <a href="https://github.com/irwintsay/TetrisJS">GitHub</a>
         </div>
-        <div class="project-images">
-          <h3>Order.ly</h3>
-          <a href="https://pacific-cliffs-67172.herokuapp.com/users/profile"><img src="images/orderly.gif" alt="Order.ly GIF" /></a>
+        <div class="project">
+          <h3>// Order.ly</h3>
+          <a title="Launch Order.ly" href="https://pacific-cliffs-67172.herokuapp.com/users/profile">
+            <img class="project-image" src="images/orderly.gif" alt="Order.ly GIF" />
+          </a>
           <p>
-            Materialize | Ruby on Rails | PostgreSQL
+            Ruby on Rails | PostgreSQL | Materialize
           </p>
-          <a href="#">GitHub</a>
+          <a href="https://github.com/irwintsay/Orderly">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>// Nextplorer</h3>
+          <a title="Launch Nextplorer" href="https://mobcats.herokuapp.com/users/profile">
+            <img class="project-image" src="images/nextplorer.png" alt="Order.ly GIF" />
+          </a>
+          <p>
+            Node/Express | MongoDB
+          </p>
+          <a href="https://github.com/rachelhamlin/Project_3">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>// VGDB</h3>
+          <a title="Launch VGDB" href="https://vgdb.herokuapp.com/users/profile">
+            <img class="project-image" src="images/vgdb.png" alt="Order.ly GIF" />
+          </a>
+          <p>
+            Node/Express | AngularJS | Semantic-UI | MongoDB
+          </p>
+          <a href="https://github.com/irwintsay/VGDB">GitHub</a>
         </div>
       </div>
 
-      <div id="contact" class="content-box" ng-show="dispContact">
-        <ul>
-          <li><a href="mailto:irwintsay@gmail.com">Email</a></li>
-          <li><a href="https://www.linkedin.com/in/irwintsay">LinkedIn</a></li>
-          <li><a href="https://github.com/irwintsay">GitHub</a></li>
-        </ul>
-      </div>
-
-      <div id="footer">
-        <h3>Email</h3>
-        <h3>LinkedIn</h3>
-        <h3>GitHub</h3>
-        <h3>Facebook</h3>
-      </div>
     </div>
+    <footer>
+      <!-- <span class="title"><a href="mailto:irwintsay@gmail.com">Email</a></span> -->
+      <span class="title"><a href="https://github.com/irwintsay">GitHub</a></span>
+      <span class="title"><a href="https://www.linkedin.com/in/irwintsay">LinkedIn</a></span>
+      <span class="title">Facebook</span>
+    </footer>
   </body>
 </html>
