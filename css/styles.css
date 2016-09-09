@@ -135,3 +135,7 @@ footer {
 .heavy {
   font-weight: 700;
 }
+
+.tiny-space {
+  margin-left: 0.2rem;
+}
