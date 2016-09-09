@@ -26,6 +26,12 @@ body {
 
   color: white;
   background-color: black;
+  /*
+    Why do I need to do this to accommodate a
+    position relative banner filling past the body
+    padding?
+  */
+  overflow-x: hidden;
 }
 
 header {
