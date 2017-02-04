@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 /* Border-box Model */
 html {
@@ -21,7 +22,7 @@ body {
   min-width: 320px;
   max-width: 1080px;
 
-  font-family: 'Raleway';
+  font-family: 'Lato', helvetica, sans-serif;
   font-size: 16px;
 
   color: #FFE;
@@ -71,11 +72,11 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 50px;
+  height: 45px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  line-height: 50px;
+  line-height: 45px;
   background-color: black;
   z-index: 1;
 }
@@ -148,5 +149,12 @@ footer .title {
     /*font-size: 3em;*/
     margin-right: 1em;
   }
-  
+
+  .about-me {
+    padding: 0 4em;
+  }
+ 
+  footer .title {
+    font-size: 0.8em;
+  }
 }
