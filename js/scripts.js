@@ -1,16 +1,4 @@
 
-function setlinkClickHandler() {
-  $('.nav').click(function(e){
-    $('.nav').removeClass('active');
-    $(this).addClass('active');
-  });
-}
-
-function setColor() {
-
-}
-
-$(function() {
-  console.log("Irwin Tsay's Portfolio");
-  setlinkClickHandler();
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Welcome to Irwin Tsay\'s Portfolio');
 });
