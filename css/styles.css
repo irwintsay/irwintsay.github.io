@@ -35,7 +35,7 @@ body {
 }
 
 header {
-  height: 60px;
+  height: 70px;
   margin-bottom: .5em;
   text-align: left;
 }
@@ -56,11 +56,6 @@ ul {
 nav li {
   font-size: 1.5rem;
   margin-bottom: 4rem;
-}
-
-nav ul li a {
-  color: #FFE;
-  transition: 1s ease;
 }
 
 nav ul li a:hover {
@@ -87,14 +82,14 @@ footer {
 
 .title {
   display: inline;
-  font-size: 0.6em;
+  font-size: 1em;
   margin: 0 0.2em;
 }
 
 .name {
   display: block;
   font-family: 'Roboto';
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: lighter;
   color: white;
   margin: 0;
@@ -137,24 +132,21 @@ footer {
   margin-left: 0.2rem;
 }
 
+footer .title {
+  margin: 0 1em;
+}
+
 @media only screen and (min-width : 768px) {
 
   body {
     margin: auto;
     font-size: 24px;
   }
+
   .name {
     display: inline;
     /*font-size: 3em;*/
     margin-right: 1em;
   }
-
-  .title {
-    font-size: .8em;
-    transition: all 1s linear;
-  }
-
-  footer a {
-    margin: 0 1em;
-  }
+  
 }
